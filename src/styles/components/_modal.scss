@@ -1,0 +1,67 @@
+.modal {
+ &__container {
+  
+
+ }
+ & .form__contacts {
+  // width: 50%;
+ }
+ &-container {
+  width: 600px;
+  display: flex;
+    flex-direction: column;
+     gap: 50px;
+ }
+ &__body {
+    position: fixed;
+     width: 100%;
+     height: 100%;
+     background-color: white;
+     left: 0;
+     top: 0;
+     z-index: 105;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     opacity: 0;
+     visibility: hidden;
+     transition: all .3s ease 0s;
+    
+     &._active {
+      opacity: 1;
+      visibility: visible;
+      transition: all .3s ease 0s;
+     }
+ }
+ &__content {
+    position: relative;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     height: 100vh;
+     border-radius: 60px;
+     background-color: white;
+     display: none;
+     &._active {
+       display: flex;
+      }
+ }
+ &__close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+  svg path {
+   stroke: var(--color-accent);
+  }
+        svg circle {
+         stroke: var(--color-accent);
+        }
+ }
+ &__title {
+  font-size: 38px;
+
+ }
+}

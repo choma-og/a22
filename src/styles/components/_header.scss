@@ -1,0 +1,53 @@
+.header {
+  &__container {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 90px;
+  }
+  &__buttons {
+    margin: 0 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-direction: row-reverse;
+  }
+  &__tel {
+    color: var(--color-sec-accent);
+    font-weight: 500;
+    font-size: 18px;
+    &-descr {
+      font-size: 12px;
+      color: var(--color-sec-accent);
+      text-align: right;
+    }
+  }
+  &__phone {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+  }
+}
+
+.menu {
+  &__body {
+
+  }
+  &__list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  &__item {
+
+  }
+  &__link {
+    color: var(--color-sec-accent);
+    font-weight: 500;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      color: var(--color-accent)
+    }
+  }
+}
