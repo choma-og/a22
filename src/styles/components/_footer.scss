@@ -1,0 +1,37 @@
+.footer {
+background-color: #F5F4F3;
+&__logo svg {
+  @media (max-width:600px) {
+    width: 120px;
+  }
+}
+  &__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    @media (max-width:600px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__descr {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 130%;
+    color: #a9a49e;
+    max-width: 310px;
+  }
+  &__tel {
+    font-size: 32px;
+    @include middletablet {
+      font-size: 22px;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.hero {
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    @include minitablet {
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+    }
+  }
+  &__info {
+    max-width: 405px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    @include middledesk {
+      position: absolute;
+      z-index: 2;
+      left: 80px;
+      max-width: 425px;
+    }
+    @include minitablet {
+      position: relative;
+      max-width: none;
+      left: 0;
+    }
+    @include middlemobile {
+      max-width: 300px;
+    }
+  }
+  &__title {
+    font-size: 46px;
+    color: var(--color-accent);
+    font-weight: 600;
+    line-height: 130%;
+    text-transform: uppercase;
+    @include middledesk {
+      color: white;
+      background-color: var(--color-accent);
+      padding: 0 10px;
+    }
+    @include minitablet {
+      background-color: initial;
+      padding: 0;
+      color: var(--color-accent);
+      font-size: 32px;
+    }
+    @include middlemobile {
+      font-size: 26px;
+    }
+  }
+  &__descr {
+    color: var(--color-sec-accent);
+    line-height: 130%;
+    font-size: 20px;
+    @include middledesk {
+      color: white;
+    }
+    @include minitablet {
+      color: var(--color-sec-accent);
+      font-size: 16px;
+    }
+  }
+  &__swiper {
+    width: 60%;
+    // height: 500px;
+    margin: 0 0 0 auto;
+    border-radius: 20px 20px 20px 200px;
+    @include middledesk {
+      width: 100%;
+    }
+    @include minitablet {
+      border-radius: 20px 20px 20px 120px;
+    }
+    @include minimobile {
+      border-radius: 20px 20px 20px 60px;
+    }
+    & .swiper-slide {
+      position: relative;
+      height: 0;
+      padding: 30%;
+      @media (max-width:600px) {
+        padding: 40%;
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include middledesk {
+        filter: grayscale(0.2);
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+<section class="contacts" id="contacts">
+  <div class="contacts__container">
+    <h2 class="section__title accent">Контакты</h2>
+    <div class="contacts__box">
+      <div class="contacts__form">
+        <form class="js-form form__contacts" action="">
+          <h3 class="contacts__heading">Заказать звонок</h3>
+          <div class="contacts__wrapper">
+            <div class="contacts__input wrapper-name">
+              <input name="user_name" class="contacts__name" type="text" id="contacts-name" data-type="text" placeholder="Ваше имя">
+              <div class="validate__form-error validate__form-error--name js-error js-error-name">
+                <span>Пожалуйста, перепроверьте данные</span>
+              </div>
+            </div>
+            <div class="contacts__input wrapper-phone">
+              <input data-mask="phone" name="user_phone" class="contacts__tel" data-type="phone" type="text" id="contacts-phone" placeholder="Телефон" inputmode="text">
+              <div class="validate__form-error validate__form-error--phone js-error js-error-phone">
+                <span>Пожалуйста, перепроверьте данные</span>
+              </div>
+            </div>
+          </div>
+          <button class=" contacts__btn btn btn-reset js-form-submit" type="submit">Заказать звонок</button>
+        </form>
+        <div class="contacts__form-map">
+          <div class="contacts__info">
+            <h4 class="contacts__descr">Почта</h4>
+            <span class="contacts__value">test@mail.com</span>
+          </div>
+          <div class="contacts__info">
+            <h4 class="contacts__descr">Адрес</h4>
+            <span class="contacts__value">ул. Ленина 123</span>
+          </div>
+          <div class="contacts__info">
+            <h4 class="contacts__descr">Телефон</h4>
+            <span class="contacts__value">8 800 555 35 35</span>
+          </div>
+        </div>
+      </div>
+      <div class="contacts__map map">
+        <div class="map__brn" id="map-brn">
+
+        </div>
+        <div class="map__wrapper">
+          <div class="contacts__info">
+            <h4 class="contacts__descr">Почта</h4>
+            <span class="contacts__value">test@mail.com</span>
+          </div>
+          <div class="contacts__info">
+            <h4 class="contacts__descr">Адрес</h4>
+            <span class="contacts__value">ул. Ленина 123</span>
+          </div>
+          <div class="contacts__info">
+            <h4 class="contacts__descr">Телефон</h4>
+            <span class="contacts__value">8 800 555 35 35</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

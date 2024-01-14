@@ -1,0 +1,70 @@
+.advantages {
+  &__container {
+
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    @include middledesk {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width:860px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    @include middlemobile {
+      gap: 10px;
+    }
+  }
+  &__descr {
+    font-size: 14px;
+    color: var(--color-sec-accent);
+    line-height: 140%;
+    margin: auto 0 0 0;
+  }
+  &__heading {
+    font-size: 24px;
+    color: var(--color-accent);
+    font-weight: 600;
+  }
+  &__item {
+    border-radius: 10px 10px 10px 10px;
+    // width: 32%;
+    display: flex;
+    gap: 40px;
+    // flex-direction: column;
+    background-color: #F5F4F3;
+    padding: 25px;
+    min-height: 250px;
+    @include middledesk {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    @include middlemobile {
+      padding: 15px;
+      min-height: 220px;
+    }
+    &:hover .advantages__number{
+       color: var(--color-accent); 
+    }
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include middledesk {
+      gap: 20px;
+    }
+  }
+  &__number {
+    margin: 0 0 0 auto;
+    font-size: 55px;
+    font-weight: 700;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--color-accent);
+    color: #fff0;
+    line-height: 0.8;
+    transition: all .3s ease-in-out 0s;
+
+  }
+}
